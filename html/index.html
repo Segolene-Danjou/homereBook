@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomèreBook - Il est de retour</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header-banner" class="banner">
+      <div class="banner__top">
+        <a class="banner__logo" href="index.html">
+          <img class="banner__image" src="../img/logo.png" alt="Logo du réseau social HomerBook">
+        </a>
+        <button id="menu-toggler" class="banner__button">Menu</button>
+      </div>
+      <nav class="menu">
+        <a class="menu__item" href="chemin/vers/amis.html">Mes amis</a>
+        <a class="menu__item" href="chemin/vers/profil.html">Mon profil</a>
+        <a class="menu__item" href="chemin/vers/param.html">Paramètres</a>
+      </nav>
+    </header>
+    <div class="content">
+      <main class="profil">
+        <article class="panel panel--center">
+          <header>
+            <h2 class="panel__title panel__title--big">Profil</h2>
+            <img class="panel__avatar" src="../img/homer.jpg" alt="Avatar de Homer">
+            <h3 id="profil-name" class="panel__title">Homère</h3>
+          </header>
+          <ul id="profil" class="tags hidden">
+          </ul>
+        </article>
+        <article id="activities" class="panel hidden">
+          <h2 class="panel__title">Activités</h2>
+          <ul class="tasks">
+          </ul>
+        </article>
+        <article class="panel">
+          <h2 class="panel__title">Mes oeuvres</h2>
+          <ul id="friends" class="tags hidden">
+          </ul>
+          <p>Ma meilleure oeuvre : <span id="best-book">?</span> &hearts;</p>
+        </article>
+        <article class="panel panel--work hidden">
+          <h2 class="panel__title">L'Iliade</h2>
+          <img src="../img/cheval-troie-troie.jpg" alt="Le cheval de Troie">
+          <p>L'épopée se déroule pendant la guerre de Troie dans laquelle s'affrontent les Achéens venus de toute la Grèce et les Troyens et leurs alliés, chaque camp étant soutenu par diverses divinités comme Athéna, Poséidon ou Apollon. L’Iliade détaille les événements survenus pendant quelques semaines de la dixième et dernière année de la guerre. Après un siège de dix ans, le sort des armes hésite encore. Achille est le meilleur guerrier de l'armée achéenne. Mais une querelle avec le roi Agamemnon, chef des Achéens, met Achille en colère et il décide de se retirer du combat, ce qui menace de retourner le sort de la guerre en faveur des Troyens, galvanisés par Hector, le meilleur guerrier de Troie. Le récit culmine avec le retour d'Achille au combat et son duel contre Hector, puis les outrages infligés par Achille au corps de son ennemi vaincu. L’Iliade se termine avec les funérailles d'Hector. Le dénouement laisse entendre une victoire prochaine des Achéens. source: Wikipedia</p>
+        </article>
+        <article class="panel panel--work hidden">
+          <h2 class="panel__title">L'Odyssée</h2>
+          <img src="../img/Ulysse_et_les_sirènes.jpg" alt="Ulysse et les sirènes">
+          <p>L’Odyssée relate le retour chez lui du héros Ulysse (Odysseus en grec), qui, après la guerre de Troie dans laquelle il a joué un rôle déterminant, met dix ans à revenir dans son île d'Ithaque, pour y retrouver son épouse Pénélope, qu'il délivre des prétendants, et son fils Télémaque. Au cours de son voyage sur mer, rendu périlleux par le courroux du dieu Poséidon, Ulysse rencontre de nombreux personnages mythologiques, comme la nymphe Calypso, la princesse Nausicaa, les Cyclopes, la magicienne Circé et les sirènes. L'épopée contient aussi un certain nombre d'épisodes qui complètent le récit de la guerre de Troie, par exemple la construction du cheval de Troie et la chute de la ville, qui ne sont pas évoquées dans l’Iliade. L’Odyssée compte douze mille cent neuf hexamètres dactyliques, répartis en vingt-quatre chants, et peut être divisée en trois grandes parties : la Télémachie (chants I-IV), les Récits d'Ulysse (chants V-XII) et la Vengeance d'Ulysse (chants XIII-XXIV). Source : Wikipedia</p>
+        </article>
+        <article class="panel panel--work hidden">
+          <h2 class="panel__title">Hymnes homériques</h2>
+          <img src="../img/hymnes-homériques.jpg" alt="Hymnes homériques">
+          <p>Les Hymnes homériques (du grec ancien : Ὁμηρικοὶ Ὕμνοι / Homērikoì Húmnoi) sont une collection de trente-quatre (ou trente-deux, suivant les décomptes) courts poèmes épiques. Aujourd'hui, on estime que le plus vieux des hymnes, celui à Déméter, remonte à l'époque d'Hésiode.
+
+            Chacun des hymnes est dédié à un dieu, et est destiné à être chanté par l'aède en guise de prélude ou proème (du grec ancien προοίμιον / prooímion), avant de passer à une œuvre plus longue. Les Hymnes homériques varient par leur sujet, leur taille (de cinq à cinq cent cinquante vers), leur époque de rédaction (entre le VIIe siècle av. J.-C. et le IVe siècle de notre ère) : rien de plus disparate, de plus incertain, donc, que cette compilation de poèmes. Source : wikipedia</p>
+        </article>
+       
+      </main>
+      <aside class="sidebar">
+        <article class="contact">
+          <h2 class="contact__title">Ecrire à Homère</h2>
+          <form id="contact" class="contact__form" action="index.html">
+            <input name="message" class="contact__input" placeholder="Votre message" type="text">
+            <button class="contact__button" type="submit">Ok</button>
+          </form>
+        </article>
+        <article class="trends">
+          <h2 class="trends__title">Tendances</h2>
+          <article id="trends-iliade" class="people">
+            <h3 class="people__title">L'Iliade</h3>
+            <p class="people__popularity">50%</p>
+            <div class="people__bar"></div>
+          </article>
+          <article id="trends-odyssée" class="people">
+            <h3 class="people__title">L'Odyssée</h3>
+            <p class="people__popularity">50%</p>
+            <div class="people__bar"></div>
+          </article>
+        </article>
+      </aside>
+    </div>
+    <script src="../js/base.js"></script>
+    <script src="../js/exo.js"></script>
+  </body>
+</html> 
